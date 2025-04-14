@@ -1,10 +1,10 @@
-import logo_verde from "public/logo_verde.svg";
+import logo_verde from "/logo_verde.svg";
 import { Link } from "react-router"
 
 export const Header = () => {
 
     return (
-        <nav className="flex items-center w-full border-b-1 border-b-[#3E7D4E] fixed">
+        <nav className="flex items-center w-full border-b-1 border-b-[#3E7D4E] fixed bg-white">
             <Link to="/">
                 <img src={logo_verde} />
             </Link>
