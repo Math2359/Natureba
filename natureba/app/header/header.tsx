@@ -9,9 +9,9 @@ export const Header = () => {
                 <img src={logo_verde} />
             </Link>
             <div className="text-[18px]">
-                <Link className="mr-15 decoration-[#8B5A2B] underline-offset-10 hover:text-[#B8B8B8] hover:underline" to="/loja">Loja</Link>
+                <Link className="mr-15 decoration-[#8B5A2B] underline-offset-10 hover:text-[#B8B8B8] hover:underline" to="../loja">Loja</Link>
                 <Link className="mr-15 decoration-[#8B5A2B] underline-offset-10 hover:text-[#B8B8B8] hover:underline" to="#">Blog</Link>
-                <Link className="decoration-[#8B5A2B] underline-offset-10 hover:text-[#B8B8B8] hover:underline" to="/loja">Sobre</Link>
+                <Link className="decoration-[#8B5A2B] underline-offset-10 hover:text-[#B8B8B8] hover:underline" to="#">Sobre</Link>
 
             </div>
         </nav>
