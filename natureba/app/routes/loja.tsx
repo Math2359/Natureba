@@ -1,4 +1,5 @@
 import type { Route } from "./+types/home";
+import { Shop } from "../loja/shop";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -7,7 +8,5 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Loja() {
-  return (
-    <>OLA OLA OLA</>
-  );
+  return <Shop />;
 }
