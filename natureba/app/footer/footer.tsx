@@ -1,4 +1,6 @@
-
+import instagram_logo from "/instagram_logo.svg";
+import whatsapp_logo from "/whatsapp_logo.svg";
+import twitter_logo from "/twitter_logo.svg";
 
 export const Footer = () => {
     return (
