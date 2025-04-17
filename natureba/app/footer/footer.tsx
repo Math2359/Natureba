@@ -19,19 +19,6 @@ export const Footer = () => {
                     <li><Link className="" to='#sobre'>Sobre</Link></li>
                 </ul>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
             <div className="w-px bg-white h-16"></div>
             <div className="flex-1 flex justify-center space-x-4">
                 <a href="https://www.instagram.com" target="_blank">
