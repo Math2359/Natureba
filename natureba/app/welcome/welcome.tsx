@@ -64,7 +64,7 @@ export function Welcome() {
         </div>
       </section>
 
-      <section>
+      <section id="blog">
         <h1>Blog</h1>
       </section>
     </main>
