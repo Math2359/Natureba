@@ -27,7 +27,7 @@ export function Welcome() {
         </div>
       </section>
 
-      <section className="w-full" style={styles.sobreSection}>
+      <section id="sobre" className="w-full" style={styles.sobreSection}>
         <div className="w-full h-full p-10 text-[#8B5A2B]">
           <div className="w-full flex justify-center">
             <h1 className="text-[40px] font-[Judson] w-fit rounded-sm px-5 py-1">Sobre nós</h1>
