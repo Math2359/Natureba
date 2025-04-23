@@ -90,6 +90,6 @@ const styles = {
   },
   blogSection: {
     fontFamily: 'Judson',
-    fontSize: '45px'
+    fontSize: '25px',
   }
 }
