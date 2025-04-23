@@ -64,7 +64,7 @@ export function Welcome() {
         </div>
       </section>
 
-      <section id="blog">
+      <section id="blog" className="w-full" style={styles.blogSection}>
         <h1>Blog</h1>
       </section>
     </main>
@@ -87,5 +87,9 @@ const styles = {
     backgroundImage: `url(${imagem_joao})`,
     backgroundAttachment: "fixed",
     backgroundSize: "cover"
+  },
+  blogSection: {
+    fontFamily: 'Judson',
+    fontSize: '45px'
   }
 }
