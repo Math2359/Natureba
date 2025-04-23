@@ -66,6 +66,15 @@ export function Welcome() {
 
       <section id="blog" className="w-full" style={styles.blogSection}>
         <h1>Blog</h1>
+            <div>
+              <label>
+                Digite seu nome: <input name='Digite seu nome:' style={styles.formSection}/>
+              </label>
+              <hr />
+              <label>
+                Deixe sua mensagem: <input name='Deixe sua mensagem:' style={styles.formSection}/>
+              </label>
+            </div>
       </section>
     </main>
   );
@@ -91,5 +100,9 @@ const styles = {
   blogSection: {
     fontFamily: 'Judson',
     fontSize: '25px',
+  },
+  formSection: {
+    border: 'solid',
+    bordercolor: 'black'
   }
 }
