@@ -103,6 +103,9 @@ const styles = {
   },
   formSection: {
     border: 'solid',
-    bordercolor: 'black'
+    bordercolor: 'black',
+    borderRadius: '10px',
+    fontFamily: 'Poppins',
+    margin: '15px',
   }
 }
