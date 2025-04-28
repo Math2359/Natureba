@@ -70,7 +70,6 @@ export function Welcome() {
               <label>
               <span className="text-[#3E7D4E]">Digite seu nome:</span><input name='Digite seu nome:' style={styles.formSection}/>
               </label>
-              <hr />
               <label>
               <span className="text-[#3E7D4E]">Deixe sua mensagem:</span><input name='Deixe sua mensagem:' style={styles.formSection}/>
               </label>
