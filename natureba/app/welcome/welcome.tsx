@@ -65,14 +65,13 @@ export function Welcome() {
       </section>
 
       <section id="blog" className="w-full" style={styles.blogSection}>
-        <h1>Blog</h1>
+        <h1><span className="text-[#3E7D4E]">Natu</span><span className="text-[#8B5A2B]">Blog</span></h1>
             <div>
               <label>
-                Digite seu nome: <input name='Digite seu nome:' style={styles.formSection}/>
+              <span className="text-[#3E7D4E]">Digite seu nome:</span><input name='Digite seu nome:' style={styles.formSection}/>
               </label>
-              <hr />
               <label>
-                Deixe sua mensagem: <input name='Deixe sua mensagem:' style={styles.formSection}/>
+              <span className="text-[#3E7D4E]">Deixe sua mensagem:</span><input name='Deixe sua mensagem:' style={styles.formSection}/>
               </label>
             </div>
       </section>
@@ -103,6 +102,10 @@ const styles = {
   },
   formSection: {
     border: 'solid',
-    bordercolor: 'black'
+    bordercolor: 'black',
+    borderRadius: '10px',
+    fontFamily: 'Poppins',
+    margin: '15px',
+    color: '#8B5A2B'
   }
 }
