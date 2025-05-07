@@ -1,5 +1,6 @@
+import { Produto as DescricaoProduto } from "~/produto/produto";
 import type { Route } from "./+types/home";
-import { Loja as Produtos } from "../loja/loja";
+
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -7,6 +8,6 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-export default function Loja() {
-  return <Produtos />;
+export default function Produto() {
+  return <DescricaoProduto />;
 }
