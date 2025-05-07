@@ -14,6 +14,16 @@ export function Welcome() {
   ]
 
   const [index, setIndex] = useState(-1);
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+  const [messages, setMessages] = useState<{nome: string, mensagem: string}[]>([]);
+
+  const handleSendMessage = () => {
+    setMessages([...messages, { nome: name, mensagem: message }]);
+    setName("");
+    setMessage("");
+  };
+
   return (
     <main className="w-full">
       <section className="w-full grid grid-flow-col grid-cols-2 h-dvh" style={styles.homePage}>
@@ -66,14 +76,26 @@ export function Welcome() {
 
       <section id="blog" className="w-full" style={styles.blogSection}>
         <h1><span className="text-[#3E7D4E]">Natu</span><span className="text-[#8B5A2B]">Blog</span></h1>
-            <div>
-              <label>
-              <span className="text-[#3E7D4E]">Digite seu nome:</span><input name='Digite seu nome:' style={styles.formSection}/>
-              </label>
-              <label>
-              <span className="text-[#3E7D4E]">Deixe sua mensagem:</span><input name='Deixe sua mensagem:' style={styles.formSection}/>
-              </label>
+        <div>
+          <label>
+            <span className="text-[#3E7D4E]">Digite seu nome:</span>
+            <input name="Digite seu nome:" style={styles.formSection} onChange={(e) => setName(e.target.value)} />
+          </label>
+          <label>
+            <span className="text-[#3E7D4E]">Deixe sua mensagem:</span>
+            <input name="Deixe sua mensagem:" style={styles.formSection} onChange={(e) => setMessage(e.target.value)} />
+          </label>
+          <button className="mt-4 bg-[#3E7D4E] text-white py-2 px-4 rounded hover:bg-[#2e5b3c] cursor-pointer" onClick={handleSendMessage}>
+            Enviar Mensagem
+          </button>
+        </div>
+        <div className="mt-4">
+          {messages.map((msg, index) => (
+            <div key={index} className="bg-[#654321] text-white p-4 rounded mb-2">
+              <p><strong>{msg.nome}:</strong> {msg.mensagem}</p>
             </div>
+          ))}
+        </div>
       </section>
     </main>
   );
